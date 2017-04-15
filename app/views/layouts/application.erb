@@ -1,8 +1,22 @@
 <html>
 	<head>
-		<title>Sinatra Framework</title>
+		<title>Audrey's Bitly</title>
+		<!-- Must put it above css file -->
+		<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
+
+		<!-- load the jQuert library first -->
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  			<!-- your root path is defined as "public" -->
+		<link rel="stylesheet" type="text/css" href="css/application.css">
+		<script src="js/application.js"></script>
+
 	</head>
 	<body>
 		<%= yield %>
+<!-- yield will get the body from index, profile.erb -->
 	</body>
 </html>

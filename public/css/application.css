@@ -1,0 +1,99 @@
+/* Applied globally */
+
+body {
+	font-family: 'Mukta Vaani', sans-serif;
+}
+
+#container {
+	width: 80%;
+	margin:auto;
+	background-color: #eee;
+	text-align: center;
+}
+
+/* Header */
+#header {
+	background: url(//d3h5jhobc20ump.cloudfront.net/7607bc8563ac28b8631dbc5867d672ee.jpg) top center no-repeat;
+	background-size: cover;
+}
+
+
+	/* NAVBAR */
+	.top-navbar {
+		margin:auto;	
+	}
+
+		/* LOGO */
+		.header-logo {
+			display: inline-block;
+			width: 9%;
+		}
+
+		.header-logo a img {
+			vertical-align: middle;
+			display: inline-block;
+			width: 100%;
+		}
+
+		/* LINKS */
+		.header-link {
+			display: inline-block;	
+			width: 50%;
+		}
+
+		.header-link ul {
+			display: flex;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		.header-link li {
+			width: 100%;
+			display: inline-block;
+			padding: auto;
+			font-weight: bolder;
+			text-align: center;
+		}
+
+		.header-button button {
+			/*position: absolute;
+			left: 0px;*/
+			background-color: #3498db;
+		  border: #2980b9 2px solid;
+		  color: #fff;
+		  border-radius: 10px;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		}
+
+
+
+table {
+	margin: auto;
+}
+
+form input[type=text] {
+	padding: 20px;
+	width:75%;
+	border-radius: 10px;
+	border: #fff 1px solid;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+form input[type=submit] {
+	padding: 20px 30px;
+	border-radius: 0px 10px 10px 0px;
+	position: absolute;
+	right: 20%;
+	background-color: #e45212;
+	border: #e45212 1px solid;
+	font-size: 16px;
+	color: #fff;
+}
+
+

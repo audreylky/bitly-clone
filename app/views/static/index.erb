@@ -1,2 +1,61 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<!-- 
+Page separated into 3 section:
+- navbar
+- Above the fold
+- Table
+
+navBar : get rid of the sides
+3 sections: logo, links, CTA
+
+ -->
+<div id = "container">
+	<header id="header">
+		<nav class= "top-navbar">
+			<span class = "header-logo">
+				<a href="#">
+			  	<img src="https://sdl-stickershop.line.naver.jp/stickershop/v1/product/1002023/iphone/main@2x.png" alt="A random logo"/>
+				</a>
+			</span>
+			<span class = "header-link">
+				<ul >
+					<li><a href="#">TOUR</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">RESOURCES</a></li>
+				</ul>
+			</span>
+			<span class = "header-button">
+				<button type="button">Click Me!</button>
+			</span>
+		</nav>
+	</header>
+
+	<div class="container">
+		<h1>THE LINKS KNOWS ALL.</h1>
+		<p>Measure with Audrey's Bitly!</p>
+
+		<form action="/urls" method="post">
+			<!-- Enter URL: -->
+			<input type="text" name="long_url" placeholder="Put a URL here!">
+			<input type="submit" name="submit" placeholder="submit" value="SUBMIT">
+		</form>
+
+		<h3><%= @err %></h3>
+	</div>
+
+	<div class="container" id="overview">
+		<table>
+			<tr>
+				<th>Link</th>
+				<th>Short Link</th>
+				<th>Clicks</th>
+			</tr>
+				<% Url.last(30).each do |url| %>
+					<tr>
+						<td><%=url.long_url %></td>
+						<td><%=url.short_url %></td>
+						<td><%=url.counter %></td>
+					</tr>
+				<% end %>
+		</table>
+	</div>
+</div>

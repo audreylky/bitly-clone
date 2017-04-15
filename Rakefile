@@ -129,6 +129,14 @@ namespace :db do
 	end
 end
 
+############ one-off #############
+desc 'Change existing database counter from nil to 0'
+task "zero" do
+	Url.all.each do |url| 
+		url.update(counter: 0)
+	end
+end
+############
 
 desc 'Initiate IRB console with environment loaded'
 task "console" do

@@ -1,13 +1,13 @@
 #Sinatra Web Server
 ## Repo details
-| Details   |  | 
-| :--------------- | -------: |
-| Re-created by: | Holloway, Chew Kean Ho |
-| Version:    | 0.0.9   |
+| Details          |                             | 
+| :--------------- | -------:                    |
+| Re-created by:   | Holloway, Chew Kean Ho      |
+| Version:         | 0.0.9   					 |
 | Contribution:    | Hobby. Best effort basis.   |
 <br><br>
 ## Purpose
-This Ruby Sinatra web skeleton was re-furbished for rapid prototyping a web API before deploying to rails server. It's referenced from Rails file structure with mild tweaking and CodeDivision Sinatra skeleton.
+This Ruby Sinatra web skeleton was re-furbished for rapid prototyping a web API before deploying to rails server. It's referenced from Rails file structure with mild tweaking and NEXT Academy Sinatra skeleton.
 <br><br>
 ##Supports
 1. Local Support
