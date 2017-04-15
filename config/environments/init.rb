@@ -20,7 +20,7 @@ require "sinatra/reloader" if development?
 	# embedded ruby
 require 'erb'
 require 'uri'
-require 'byebug'
+# require 'byebug'
 ######################################################################
 
 
